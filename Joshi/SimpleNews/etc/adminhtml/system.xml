@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/system_file.xsd">
+    <system>
+        <tab id="tutorial" translate="label" sortOrder="1">
+            <label>Joshi Tutorial</label>
+        </tab>
+        <section id="simplenews" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Simple News</label>
+            <tab>tutorial</tab>
+            <resource>Joshi_SimpleNews::system_config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enable_in_frontend" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable In Frontend</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="head_title" translate="label comment" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Head Title</label>
+                    <comment>Fill head title of news list page at here</comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="latest_news_block_position" translate="label" type="select" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Latest News Block Position</label>
+                    <source_model>Joshi\SimpleNews\Model\System\Config\LatestNews\Position</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
