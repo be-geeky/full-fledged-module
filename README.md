@@ -4,6 +4,7 @@
 App\Http\Controllers
 
 #Models
+
 App\
 
 #Database Migrations
