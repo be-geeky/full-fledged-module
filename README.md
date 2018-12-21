@@ -28,4 +28,4 @@ routes\web.php
 1. clone this repository
 2. make changes to .env file
 3. run php artisan:migrate command in terminal
-4. go to http://localhost/newblog/public/ or run php artisan serve 
+4. go to http://localhost/newblog/public/ or run php artisan serve command in terminal
